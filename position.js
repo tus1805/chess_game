@@ -1,3 +1,9 @@
-import rookBlack from "./asset/rook_black"
-const a8 = document.getElementById("a8");
-console.log(rook_black)
+const rookBlack = "asset/rook_black.png"
+
+function creep(id, url) {
+  const square = document.getElementById(id);
+  const img = document.createElement("img")
+  img.src = url
+  square.appendChild(img)
+}
+creep("a8", rookBlack)
